@@ -5,15 +5,15 @@ import Link from 'next/link'
 import { getSortedPostsData } from '../lib/posts'
 
 export async function getStaticProps() {
-  const allPostData = getSortedPostsData()
+  const allPostsData = getSortedPostsData()
   return {
     props: {
-      allPostsDate
+      allPostsData
     }
   }
 }
 
-export default function Home({ allPotsData }) {
+export default function Home({ allPostsData }) {
   return (
     <Layout home>
       <Head>
