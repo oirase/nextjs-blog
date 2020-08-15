@@ -7,11 +7,11 @@ export default () => {
     <Layout>
       <div>
         <Head>
-          <title>{siteTitle}</title>
+          <title>sub | {siteTitle}</title>
         </Head>
-        <p>index</p>
-        <Link href="/sub">
-          <a>sub</a>
+        <p>sub</p>
+        <Link href="/">
+          <a>index</a>
         </Link>
       </div>
     </Layout>
