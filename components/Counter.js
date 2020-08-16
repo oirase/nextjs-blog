@@ -31,7 +31,7 @@ export default () => {
       {/*<p style={{ background: theme.background, color: theme.foreground }}>theme</p>*/}
       Count: {state.count}
       <button
-        onClick={() => dispatch({type: 'reset', payload: initialCount})}>
+        onClick={() => dispatch({type: 'reset', payload: 0})}>
         Reset
       </button>
       <button onClick={() => dispatch({type: 'increment'})}>+</button>
