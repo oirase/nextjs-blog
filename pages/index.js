@@ -13,12 +13,13 @@ export default () => {
 
   return (
     <Layout>
+    <Context>
       <div>
         <Head>
           <title>{siteTitle}</title>
         </Head>
         <p>index</p>
-        <Context />
+
         <Counter />
         <p>{count}</p>
         <button onClick={() => setCount(count => count + 1)}>+</button>
@@ -26,6 +27,7 @@ export default () => {
           <a>sub</a>
         </Link>
       </div>
+    </Context>
     </Layout>
   )
 }
