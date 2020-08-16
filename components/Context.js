@@ -15,7 +15,7 @@ const ThemeContext = React.createContext(themes.light);
 
 function App() {
   return (
-    <ThemeContext.Provider value={themes.dark}>
+    <ThemeContext.Provider value={themes.light}>
       <Toolbar />
     </ThemeContext.Provider>
   );
