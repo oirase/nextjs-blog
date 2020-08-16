@@ -4,7 +4,7 @@ import { useState } from 'react'
 import Layout, {siteTitle} from '../components/Layout'
 import Counter from '../components/Counter'
 import Context from '../components/Context'
-import Basket from './components/Basket'
+import Basket from '../components/Basket'
 
 
 const initialState = 0
