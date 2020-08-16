@@ -21,10 +21,10 @@ const reducer = (state, action) => {
 
 export default ({children}) => {
 
-  const [store, dispatch] = useReducer(reducer, initialState)
+  //const [store, dispatch] = useReducer(reducer, initialState)
 
   return (
-  <Store.Provider value={{store, dispatch}}>
+  <Store.Provider value={{store: 'apple'}}>
     {children}
   </Store.Provider>
 
