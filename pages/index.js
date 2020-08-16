@@ -30,6 +30,9 @@ export default () => {
         <Link href="/sub">
           <a>sub</a>
         </Link>
+        <Link href="/count">
+          <a>count</a>
+        </Link>
       </div>
     </Context>
     </Layout>
