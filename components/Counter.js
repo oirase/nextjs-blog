@@ -22,7 +22,7 @@ const reducer = (state, action) => {
 }
 
 export default () => {
-  const [state, dispath] = useReducer(reducer, initialState)
+  const [state, dispatch] = useReducer(reducer, initialState)
   return (
     <>
       Count: {state.count}
