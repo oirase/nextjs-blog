@@ -1,5 +1,7 @@
+import { useContext } from 'react'
+
 const themes = {
- light: {
+  light: {
     foreground: "#000000",
     background: "#eeeeee"
   },
@@ -9,31 +11,26 @@ const themes = {
   }
 };
 
-const ThemeContext = React.crateContext(themes.light)
+const ThemeContext = React.createContext(themes.light);
 
-const App = () => {
+function App() {
   return (
     <ThemeContext.Provider value={themes.dark}>
       <Toolbar />
-    <ThemeContext>
-    )
+    </ThemeContext.Provider>
+  );
 }
 
-const Toolbar(props) => {
+function Toolbar(props) {
   return (
     <div>
-      <ThemeButton />
+      <ThemedButton />
     </div>
-  )
+  );
 }
 
-const ThemeButton = () => {
-  const theme = useContext(ThemeContext)
-  return (
-    <button style={{ background: theme.background, color: theme.foreground }}>
-       I am styled by theme context!
-    </button>
-  )
+function ThemedButton() {
+  const theme = useContext(ThemeContext);  return (    <button style={{ background: theme.background, color: theme.foreground }}>      I am styled by theme context!    </button>  );
 }
 
 export default App
