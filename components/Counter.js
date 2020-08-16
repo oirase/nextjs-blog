@@ -4,7 +4,7 @@ const initialState = {count: 0}
 
 const initialCount = 0
 
-const init(initialCount) => {
+const init = (initialCount) => {
   return {count: initialCount}
 }
 
@@ -28,6 +28,8 @@ export default () => {
       Count: {state.count}
       <button
         onClick={() => dispatch({type: 'reset', payload: initialCount})}>
+        Reaet
+      </button>
       <button onClick={() => dispatch({type: decrement})}>-</button>
       <button onClick={() => dispatch({type: increment})}>-</button>
     </>
