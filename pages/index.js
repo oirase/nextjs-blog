@@ -4,6 +4,8 @@ import { useState } from 'react'
 import Layout, {siteTitle} from '../components/Layout'
 import Counter from '../components/Counter'
 import Context from '../components/Context'
+import Basket from './components/Basket'
+
 
 const initialState = 0
 
@@ -13,7 +15,9 @@ export default () => {
 
   return (
     <Layout>
+    <Basket />
     <Context>
+
       <div>
         <Head>
           <title>{siteTitle}</title>
