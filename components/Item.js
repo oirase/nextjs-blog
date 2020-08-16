@@ -8,7 +8,7 @@ export default () => {
     <>
       <p>{store.name}</p>
       {/*<p>{store}</p>*/}
-      {/*<button onClick={dispatch({name: 'orane'})}>changeName</button>*/}
+      <button onClick={dispatch({name: 'orane'})}>changeName</button>
     </>
 
   )
