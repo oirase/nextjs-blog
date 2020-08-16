@@ -8,7 +8,7 @@ export default () => {
     <>
       <p>{store.name}</p>
       {/*<p>{store}</p>*/}
-      <button onClick={()=>{alert()}}>changeName</button>
+      <button onClick={()=>{dispatch({name:'orange'})}}>changeName</button>
     </>
 
   )
