@@ -6,8 +6,8 @@ export default () => {
   const { store } = useContext(Store)
   return (
     <>
-      {/*<p>{store.name}</p>*/}
-      <p>{store}</p>
+      <p>{store.name}</p>
+      {/*<p>{store}</p>*/}
       {/*<button onClick={dispatch({name: 'orane'})}>changeName</button>*/}
     </>
 
