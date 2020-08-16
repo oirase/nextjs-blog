@@ -11,7 +11,7 @@ const themes = {
   }
 };
 
-const ThemeContext = React.createContext(themes.light);
+export const ThemeContext = React.createContext(themes.light);
 
 function App({children}) {
   return (
@@ -31,7 +31,8 @@ function Toolbar(props) {
 }
 
 function ThemedButton() {
-  const theme = useContext(ThemeContext);  return (    <button style={{ background: theme.background, color: theme.foreground }}>      I am styled by theme context!    </button>  );
+  const theme = useContext(ThemeContext);
+  return (    <button style={{ background: theme.background, color: theme.foreground }}>      I am styled by theme context!    </button>  );
 }
 
 export default App
