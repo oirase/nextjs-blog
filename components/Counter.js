@@ -1,5 +1,6 @@
 import { useContext, useReducer } from 'react'
 import { ThemeContext } from './Context'
+import Basket from './Basket'
 /*
 const initialState = {count: 0}
 
@@ -28,6 +29,7 @@ export default () => {
 
   return (
     <>
+      <Basket />
       {/*<p style={{ background: theme.background, color: theme.foreground }}>theme</p>*/}
       Count: {state.count}
       <button
