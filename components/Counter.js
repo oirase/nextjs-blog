@@ -28,7 +28,7 @@ export default () => {
       Count: {state.count}
       <button
         onClick={() => dispatch({type: 'reset', payload: initialCount})}>
-        Reaet
+        Reset
       </button>
       <button onClick={() => dispatch({type: increment})}>+</button>
       <button onClick={() => dispatch({type: decrement})}>-</button>
