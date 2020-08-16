@@ -11,6 +11,7 @@ const initialState = {
 export const Store = createContext(initialState)
 
 const reducer = (state, action) => {
+  console.log(state, action.payload)
   return {
     ...state,
     ...action.payload
