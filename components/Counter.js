@@ -1,5 +1,5 @@
-import { useReducer } from 'react'
-import { useContext, ThemeContext } from 'react'
+import { useContext, useReducer } from 'react'
+import { ThemeContext } from './Context'
 
 const initialState = {count: 0}
 
@@ -28,7 +28,7 @@ export default () => {
 
   return (
     <>
-      <p style={{ background: theme.background, color: theme.foreground }}>theme<p>
+      <p style={{ background: theme.background, color: theme.foreground }}>theme</p>
       Count: {state.count}
       <button
         onClick={() => dispatch({type: 'reset', payload: initialCount})}>
