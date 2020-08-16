@@ -3,7 +3,7 @@ import { useContext } from 'react'
 const themes = {
   light: {
     foreground: "#000000",
-    background: "#eeeeee"
+    background: "red"
   },
   dark: {
     foreground: "#ffffff",
@@ -15,9 +15,7 @@ const ThemeContext = React.createContext(themes.light);
 
 function App() {
   return (
-    <ThemeContext.Provider value={themes.light}>
       <Toolbar />
-    </ThemeContext.Provider>
   );
 }
 
