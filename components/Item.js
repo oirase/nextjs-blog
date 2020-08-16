@@ -3,7 +3,7 @@ import { Store } from './Store'
 
 export default () => {
   //const { store, dispatch } = useContext(Store)
-  const { store } = useContext(Store)
+  const { store, dispatch } = useContext(Store)
   return (
     <>
       <p>{store.name}</p>
