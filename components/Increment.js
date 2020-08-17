@@ -1,19 +1,23 @@
 import HighOrder from './HighOrder'
+import Connect from './Connect'
 
-const Increment = ({ color }) => {
+const Increment = ({ color, data }) => {
 
   const increment = () => {
     alert()
   }
 
   return (
-  <button
-    style={{background: color}}
-    onClick={increment}>
-    increment
-  </button>
+    <>
+      <p>{data}</p>
+      <button
+        style={{background: color}}
+        onClick={increment}>
+        increment
+      </button>
+    </>
   )
 }
 
-export default HighOrder(Increment, 'blue')
+export default Connect(10, 20)(HighOrder(Increment, 'blue'))
 
