@@ -5,11 +5,20 @@ import Layout, {siteTitle} from '../components/Layout'
 import Counter from '../components/Counter'
 import Context from '../components/Context'
 import Basket from '../components/Basket'
-
+import staticProps from '../lib/staticProps'
 
 const initialState = 0
 
-export default () => {
+export async function getStaticProps() {
+  const allPostData = staticProps()
+  return {
+    props: {
+      allPostData
+    }
+  }
+}
+
+export default ({ allPostData }) => {
 
   const [count, setCount] = useState(initialState)
 
@@ -23,7 +32,7 @@ export default () => {
           <title>{siteTitle}</title>
         </Head>
         <p>index</p>
-
+        <p>{allPostData}</p>
         <Counter />
         <p>{count}</p>
         <button onClick={() => setCount(count => count + 1)}>+</button>

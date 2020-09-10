@@ -1,0 +1,2 @@
+
+const WappedCompoent = (BaseComo)
